@@ -2,7 +2,7 @@ import Alert from "./components/Alert/Alert";
 import Form from "./components/Form/Form";
 import List from "./components/List/List";
 import styles from "./App.module.css";
-import { useExpanseContext } from "./components/context/expense-context";
+import { useExpanseContext } from "./context/expense-context";
 
 function App() {
   const { expenses, alert } = useExpanseContext();

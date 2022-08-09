@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./List.module.css";
 import Item from "../Item/Item";
 import { FaTrash } from "react-icons/fa";
-import { useExpanseContext } from "../context/expense-context";
+import { useExpanseContext } from "../../context/expense-context";
 
 const List = () => {
   const { expenses, handleClearList } = useExpanseContext();

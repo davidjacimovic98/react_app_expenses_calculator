@@ -1,5 +1,5 @@
 import React from "react";
-import { useExpanseContext } from "../context/expense-context";
+import { useExpanseContext } from "../../context/expense-context";
 import styles from "./Alert.module.css";
 
 const Alert = () => {

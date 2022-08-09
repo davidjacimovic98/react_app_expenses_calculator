@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Form.module.css";
 import { MdSend } from "react-icons/md";
-import { useExpanseContext } from "../context/expense-context";
+import { useExpanseContext } from "../../context/expense-context";
 
 const Form = () => {
   const {

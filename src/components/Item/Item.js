@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Item.module.css";
 import { MdEdit } from "react-icons/md";
 import { FaTrash } from "react-icons/fa";
-import { useExpanseContext } from "../context/expense-context";
+import { useExpanseContext } from "../../context/expense-context";
 
 const Item = ({ id, charge, amount }) => {
   const { handleDeleteSingleItem, handleEditItem } = useExpanseContext();
