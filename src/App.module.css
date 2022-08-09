@@ -1,0 +1,25 @@
+body {
+  background-color: lightblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.main {
+  background-color: #fff;
+  width: 90vw;
+}
+
+h1 {
+  text-transform: capitalize;
+  color: rgb(87, 23, 23);
+}
+
+span {
+  background-color: #fff;
+  padding: 0 10px;
+}

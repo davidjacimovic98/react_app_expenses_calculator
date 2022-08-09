@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Alert from "./components/Alert/Alert";
+import Form from "./components/Form/Form";
+import List from "./components/List/List";
+import styles from "./App.module.css";
+import { useExpanseContext } from "./components/context/expense-context";
 
 function App() {
+  const { expenses, alert } = useExpanseContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      {alert.show && <Alert />}
+      <h1>expenses calculator</h1>
+      <div className={styles.main}>
+        <Form />
+        <List />
+      </div>
+      <h1>
+        total expenses :{" "}
+        <span>
+          ${" "}
+          {expenses.reduce((prev, curr) => {
+            return (prev += +curr.amount);
+          }, 0)}
+        </span>
+      </h1>
     </div>
   );
 }

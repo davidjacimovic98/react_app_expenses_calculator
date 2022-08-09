@@ -1,0 +1,19 @@
+.alert_div_success,
+.alert_div_danger {
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 90%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 2vh 0;
+  padding: 1vh 0;
+  color: #fff;
+}
+
+.alert_div_success {
+  background-color: rgb(102, 188, 102);
+}
+
+.alert_div_danger {
+  background-color: red;
+}

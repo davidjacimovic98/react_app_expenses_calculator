@@ -1,0 +1,53 @@
+.item {
+  list-style: none;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  padding: 1vh 2vw;
+  width: 75vw;
+  margin-left: -5vw;
+  transition: all 0.3s linear;
+}
+
+.item:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.info {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.charge {
+  text-transform: capitalize;
+}
+
+.amount {
+  background-color: lightblue;
+  color: rgb(87, 23, 23);
+  font-size: 18px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.edit_btn,
+.delete_btn {
+  border: none;
+  background-color: transparent;
+}
+
+.edit_btn:hover,
+.delete_btn:hover {
+  cursor: pointer;
+}
+
+.edit_btn {
+  color: green;
+}
+
+.delete_btn {
+  color: red;
+}
